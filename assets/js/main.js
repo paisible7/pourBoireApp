@@ -1,6 +1,6 @@
 // Sélectionner le formulaire
 const paymentForm = document.getElementById("payment-form");
-
+const notificationsDiv = document.getElementById("notifications");
 // Ajouter un écouteur d'événement pour le bouton "Payer"
 paymentForm.addEventListener("submit", function (event) {
     event.preventDefault(); // Empêcher le rechargement de la page
@@ -18,7 +18,7 @@ paymentForm.addEventListener("submit", function (event) {
     }
 
     // Simuler un paiement
-    const paiementDetails = {
+    const paiement = {
         matricule: matricule,
         nom: nom,
         classe: classe,
@@ -29,6 +29,10 @@ paymentForm.addEventListener("submit", function (event) {
     // Afficher une notification de succès
     showNotification(
         `Paiement réussi ! ${nom} (${classe}) a payé ${montant} FCFA.`
+    );
+
+    addNotification(
+        `Paiement de ${montant} FCFA effectué par ${nom} (${classe}) le ${paiement.date}.`
     );
 
     // Ajouter les détails dans la console (ou plus tard dans une base de données)
@@ -57,4 +61,17 @@ function showNotification(message) {
 function addPaymentToHistory(payment) {
     payments.push(payment);
     alert("Paiement ajouté à l'historique !");
+}
+
+function addNotification(message) {
+    const notification = document.createElement("div");
+    notification.classList.add("notification");
+    notification.textContent = message;
+
+    notificationsDiv.appendChild(notification);
+
+    // Supprimer la notification après 10 secondes
+    setTimeout(() => {
+        notification.remove();
+    }, 10000);
 }
