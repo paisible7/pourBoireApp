@@ -75,3 +75,11 @@ function addNotification(message) {
         notification.remove();
     }, 10000);
 }
+
+addPaymentToHistory({
+    matricule: matricule,
+    nom: nom,
+    classe: classe,
+    montant: montant,
+    date: new Date().toLocaleDateString(),
+});
