@@ -6,51 +6,52 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
-  }
-  
-  .header {
+}
+
+.header {
     background-color: #0056b3;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1, h2 {
+}
+
+h1,
+h2 {
     margin: 0;
-  }
-  
-  .form-section {
+}
+
+.form-section {
     margin-top: 1rem;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 1.5rem;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-  }
-  
-  .form-group input,
-  .form-group select {
+}
+
+.form-group input,
+.form-group select {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .btn {
+}
+
+.btn {
     display: inline-block;
     background-color: #0056b3;
     color: #fff;
@@ -59,23 +60,23 @@ body {
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #003d80;
-  }
-  
-  .footer {
+}
+
+.footer {
     text-align: center;
     padding: 1rem 0;
     background: #0056b3;
     color: #fff;
     margin-top: 2rem;
     font-size: 0.875rem;
-  }
-  
+}
 
-  /* Styles des notifications */
+
+/* Styles des notifications */
 .notification {
     position: fixed;
     bottom: 20px;
@@ -87,48 +88,78 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
     animation: slideIn 0.3s ease-out;
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
+}
+
 
 /* Styles pour la table */
 .table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-  }
-  
-  .table th, .table td {
+}
+
+.table th,
+.table td {
     border: 1px solid #ddd;
     padding: 0.75rem;
     text-align: left;
-  }
-  
-  .table th {
+}
+
+.table th {
     background-color: #0056b3;
     color: white;
     font-weight: bold;
-  }
-  
-  .table tr:nth-child(even) {
+}
+
+.table tr:nth-child(even) {
     background-color: #f9f9f9;
-  }
-  
-  .table tr:hover {
+}
+
+.table tr:hover {
     background-color: #f1f1f1;
-  }
-  
-  .table td {
+}
+
+.table td {
     color: #333;
-  }
-  
+}
+
+
+
+/* Section des notifications */
+.notifications-section {
+    margin-top: 2rem;
+}
+
+.notifications {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.notification {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.notification:last-child {
+    margin-bottom: 0;
+}
