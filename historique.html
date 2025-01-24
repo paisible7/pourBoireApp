@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique des Paiements</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Historique des Paiements</h1>
+        <nav>
+            <a href="index.html" class="btn">Retour au Paiement</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Liste des Paiements</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Matricule</th>
+                        <th>Nom Complet</th>
+                        <th>Classe</th>
+                        <th>Montant (FCFA)</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="payment-history">
+                    <!-- Les lignes de paiement seront ajoutées ici dynamiquement -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Gestion Scolaire</p>
+    </footer>
+
+    <script src="assets/js/historique.js"></script>
+</body>
+
+</html>

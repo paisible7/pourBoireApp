@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Paiement</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Module de Paiement Scolaire</h1>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Effectuer un Paiement</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="matricule">Matricule :</label>
+                    <input type="text" id="matricule" name="matricule" placeholder="Entrez le matricule" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">Nom Complet :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez le nom complet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="classe">Classe :</label>
+                    <select id="classe" name="classe" required>
+                        <option value="" disabled selected>Choisissez une classe</option>
+                        <option value="6ème">6ème</option>
+                        <option value="5ème">5ème</option>
+                        <option value="4ème">4ème</option>
+                        <option value="3ème">3ème</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="montant">Montant à payer (FCFA) :</label>
+                    <input type="number" id="montant" name="montant" placeholder="Ex: 15000" required>
+                </div>
+
+                <button type="submit" class="btn">Payer</button>
+            </form>
+        </section>
+
+        <section class="notifications-section">
+            <h2>Notifications</h2>
+            <div id="notifications" class="notifications">
+                <!-- Les notifications apparaîtront ici -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Gestion Scolaire</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
