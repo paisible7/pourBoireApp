@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Élève</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Profil de l'Élève</h1>
+        <nav>
+            <a href="index.html">Paiement</a>
+            <a href="historique.html">Historique</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="profile">
+            <h2 id="profile-name">Nom : </h2>
+            <p><strong>Matricule :</strong> <span id="profile-matricule"></span></p>
+            <p><strong>Classe :</strong> <span id="profile-class"></span></p>
+            <p><strong>Montant Restant :</strong> <span id="profile-balance"></span> FCFA</p>
+
+            <h3>Historique des Paiements</h3>
+            <ul id="payment-history">
+                <!-- L'historique des paiements sera injecté ici -->
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Gestion Scolaire</p>
+    </footer>
+
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

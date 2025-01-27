@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Élève</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Profil Élève</h1>
+        <nav>
+            <a href="index.html">Paiement</a>
+            <a href="historique.html">Historique des Paiements</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Rechercher un Élève</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="search-matricule">Matricule :</label>
+                    <input type="text" id="search-matricule" placeholder="Entrez le matricule" required>
+                </div>
+                <button type="submit" class="btn">Rechercher</button>
+            </form>
+        </section>
+
+        <section id="profile-section" class="profile-section hidden">
+            <h2>Informations sur l'Élève</h2>
+            <div id="profile-info">
+                <!-- Les informations de l'élève seront affichées ici -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Gestion Scolaire</p>
+    </footer>
+
+    <script src="assets/js/profil.js"></script>
+</body>
+
+</html>

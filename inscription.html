@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement des Frais d'Inscription</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Confirmation de l'Inscription</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="profil.html">Profil Élève</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-container">
+            <h2>Formulaire de Paiement</h2>
+            <form id="payment-form">
+                <!-- Informations de base -->
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div>
+                    <label for="classe">Classe souhaitée :</label>
+                    <select id="classe" name="classe" required>
+                        <option value="" disabled selected>Sélectionnez une classe</option>
+                        <option value="6ème">6ème</option>
+                        <option value="5ème">5ème</option>
+                        <option value="4ème">4ème</option>
+                        <option value="3ème">3ème</option>
+                        <option value="Seconde">Seconde</option>
+                        <option value="Première">Première</option>
+                        <option value="Terminale">Terminale</option>
+                    </select>
+                </div>
+
+                <!-- Paiement -->
+                <div>
+                    <label for="frais-inscription">Frais d'Inscription :</label>
+                    <input type="number" id="frais-inscription" name="frais-inscription" placeholder="Montant à payer" required>
+                </div>
+
+                <!-- Documents -->
+                <div>
+                    <label for="documents">Documents nécessaires (PDF) :</label>
+                    <input type="file" id="documents" name="documents" accept=".pdf" required>
+                </div>
+
+                <!-- Bouton d'envoi -->
+                <div>
+                    <button type="submit">Confirmer et Payer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Gestion Scolaire</p>
+    </footer>
+
+    <script src="assets/js/payment.js"></script>
+</body>
+
+</html>
